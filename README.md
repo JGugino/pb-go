@@ -1,0 +1,61 @@
+## Client Systems
+- [ ] Records - https://pocketbase.io/docs/api-records/
+	- CRUD Actions
+		- [ ] List/Search - GET - /api/collections/`collectionIdOrName`/records
+		- [ ] View - GET - /api/collections/`collectionIdOrName`/records/`recordId`
+		- [ ] Create - POST - /api/collections/`collectionIdOrName`/records
+		- [ ] Update - PATCH - /api/collections/`collectionIdOrName`/records/`recordId`
+		- [ ] Delete - DELETE - /api/collections/`collectionIdOrName`/records/`recordId`
+	- Auth Record Actions
+		- [ ] List Auth Methods - GET - /api/collections/`collectionIdOrName`/auth-methods
+		- [ ] Auth with Password - POST - /api/collections/`collectionIdOrName`/auth-with-password
+		- [ ] Auth with OAuth2 - POST - /api/collections/`collectionIdOrName`/auth-with-oauth2
+		- [ ] Auth Refresh - POST - /api/collections/`collectionIdOrName`/auth-refresh
+		- [ ] Request Verification - POST - /api/collections/`collectionIdOrName`/request-verification
+		- [ ] Confirm Verification - POST - /api/collections/`collectionIdOrName`/confirm-verification
+		- [ ] Request Password Reset - POST - /api/collections/`collectionIdOrName`/request-password-reset
+		- [ ] Confirm Password Reset - POST - /api/collections/`collectionIdOrName`/confirm-password-reset
+		- [ ] Request Email Change - POST - /api/collections/`collectionIdOrName`/request-email-change
+		- [ ] Confirm Email Change - POST - /api/collections/`collectionIdOrName`/confirm-email-change
+		- [ ] List Linked External Auth Providers - GET - /api/collections/`collectionIdOrName`/records/`id`/external-auths
+		- [ ] Unlink external auth provider - DELETE - /api/collections/`collectionIdOrName`/records/`id`/external-auths/`provider`
+- [ ] Realtime - https://pocketbase.io/docs/api-realtime/
+- [ ] Files - https://pocketbase.io/docs/api-files/
+	- [ ] Download/Fetch File - GET - /api/files/`collectionIdOrName`/`recordId`/`filename`
+	- [ ] Generate Protected File Token - POST - /api/files/token
+- [ ] Admins - https://pocketbase.io/docs/api-admins/
+	- [x] Auth With Password - POST - /api/admins/auth-with-password
+	- [x] Auth Refresh - POST - /api/admins/auth-refresh
+	- [x] Request Password Reset - POST - /api/admins/request-password-reset
+	- [ ] Confirm Password Reset - POST - /api/admins/confirm-password-reset
+	- [ ] List Admins - GET - /api/admins
+	- [ ] View Admin - GET - /api/admins/`id`
+	- [ ] Create Admin - POST - /api/admins
+	- [ ] Update Admin - PATCH - /api/admins/`id`
+	- [ ] Delete Admin - DELETE - /api/admins/`id`
+- [ ] Collections - https://pocketbase.io/docs/api-collections/
+	- [ ] List Collections - GET - /api/collections
+	- [ ] View Collections - GET - /api/collections/`collectionIdOrName`
+	- [ ] Create Collection - POST - /api/collections
+	- [ ] Update Collection - PATCH - /api/collections/`collectionIdOrName`
+	- [ ] Delete Collection - DELETE - /api/collections/`collectionIdOrName`
+	- [ ] Import Collections - PUT - /api/collections/import
+- [ ] Settings - https://pocketbase.io/docs/api-settings/
+	- [ ] List Settings - GET - /api/settings
+	- [ ] Update Settings - PATCH - /api/settings
+	- [ ] Test S3 Storage Connection - POST - /api/settings/test/s3
+	- [ ] Send Test Email - POST - /api/settings/test/email
+	- [ ] Generate Apple Client Secret - POST - /api/settings/apple/generate-client-secret
+- [ ] Logs - pocketbase.io/docs/api-logs/
+	- [ ] List Logs - GET - /api/logs
+	- [ ] View Logs - GET - /api/logs/`id`
+	- [ ] Logs Statistics - GET - /api/logs/stats
+- [ ] Backups - https://pocketbase.io/docs/api-backups/
+	- [ ] List Backups - GET - /api/backups
+	- [ ] Create Backup - POST - /api/backups
+	- [ ] Upload Backup - POST - /api/backups/upload
+	- [ ] Delete Backup - DELETE - /api/backups/`key`
+	- [ ] Restore Backup - POST - /api/backups/`key`/restore
+	- [ ] Download Backup - GET - /api/backups/`key`
+- [x] Health - https://pocketbase.io/docs/api-health/
+	- [x] Health Check - GET - /api/health

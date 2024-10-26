@@ -24,13 +24,13 @@ func main() {
 			return
 		}
 
-		log.Println("Refreshing admin auth")
-		refreshRes, err := adminApi.AuthRefresh(res.Token)
+		log.Println("Get admin record")
+		getRes, err := adminApi.GetList(0, 0, "-created", "", "", false, res.Token)
 
 		if ok := services.HandlePocketBaseError(err); !ok {
 			return
 		}
 
-		log.Println(refreshRes)
+		log.Println(getRes)
 	}
 }
