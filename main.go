@@ -24,13 +24,12 @@ func main() {
 			return
 		}
 
-		log.Println("Get admin record")
-		getRes, err := adminApi.GetList(0, 0, "-created", "", "", false, res.Token)
-
+		log.Println("Create admin")
+		createRes, err := adminApi.CreateAdmin("", "support@qrify.info", "Password!234", "Password!234", 3, res.Token, "")
 		if ok := services.HandlePocketBaseError(err); !ok {
 			return
 		}
 
-		log.Println(getRes)
+		log.Println(createRes)
 	}
 }
