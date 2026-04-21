@@ -1,4 +1,6 @@
-## Client Systems
+# **PB-GO - A Golang client for interacting with a Pocketbase instance**
+## ***This project is still under development and will have breaking changes, use at your own risk.***
+
 - [ ] Records - https://pocketbase.io/docs/api-records/
 	- CRUD Actions
 		- [x] List/Search - GET - /api/collections/`collectionIdOrName`/records
