@@ -1,16 +1,16 @@
 ## Client Systems
 - [ ] Records - https://pocketbase.io/docs/api-records/
 	- CRUD Actions
-		- [ ] List/Search - GET - /api/collections/`collectionIdOrName`/records
-		- [ ] View - GET - /api/collections/`collectionIdOrName`/records/`recordId`
-		- [ ] Create - POST - /api/collections/`collectionIdOrName`/records
-		- [ ] Update - PATCH - /api/collections/`collectionIdOrName`/records/`recordId`
-		- [ ] Delete - DELETE - /api/collections/`collectionIdOrName`/records/`recordId`
+		- [x] List/Search - GET - /api/collections/`collectionIdOrName`/records
+		- [x] View - GET - /api/collections/`collectionIdOrName`/records/`recordId`
+		- [x] Create - POST - /api/collections/`collectionIdOrName`/records
+		- [x] Update - PATCH - /api/collections/`collectionIdOrName`/records/`recordId`
+		- [x] Delete - DELETE - /api/collections/`collectionIdOrName`/records/`recordId`
 	- Auth Record Actions
-		- [ ] List Auth Methods - GET - /api/collections/`collectionIdOrName`/auth-methods
-		- [ ] Auth with Password - POST - /api/collections/`collectionIdOrName`/auth-with-password
+		- [x] List Auth Methods - GET - /api/collections/`collectionIdOrName`/auth-methods
+		- [x] Auth with Password - POST - /api/collections/`collectionIdOrName`/auth-with-password
 		- [ ] Auth with OAuth2 - POST - /api/collections/`collectionIdOrName`/auth-with-oauth2
-		- [ ] Auth Refresh - POST - /api/collections/`collectionIdOrName`/auth-refresh
+		- [X] Auth Refresh - POST - /api/collections/`collectionIdOrName`/auth-refresh
 		- [ ] Request Verification - POST - /api/collections/`collectionIdOrName`/request-verification
 		- [ ] Confirm Verification - POST - /api/collections/`collectionIdOrName`/confirm-verification
 		- [ ] Request Password Reset - POST - /api/collections/`collectionIdOrName`/request-password-reset
@@ -23,21 +23,12 @@
 - [ ] Files - https://pocketbase.io/docs/api-files/
 	- [ ] Download/Fetch File - GET - /api/files/`collectionIdOrName`/`recordId`/`filename`
 	- [ ] Generate Protected File Token - POST - /api/files/token
-- [ ] Admins - https://pocketbase.io/docs/api-admins/
-	- [x] Auth With Password - POST - /api/admins/auth-with-password
-	- [x] Auth Refresh - POST - /api/admins/auth-refresh
-	- [x] Request Password Reset - POST - /api/admins/request-password-reset
-	- [ ] Confirm Password Reset - POST - /api/admins/confirm-password-reset
-	- [ ] List Admins - GET - /api/admins
-	- [ ] View Admin - GET - /api/admins/`id`
-	- [ ] Create Admin - POST - /api/admins
-	- [ ] Update Admin - PATCH - /api/admins/`id`
-	- [ ] Delete Admin - DELETE - /api/admins/`id`
 - [ ] Collections - https://pocketbase.io/docs/api-collections/
-	- [ ] List Collections - GET - /api/collections
-	- [ ] View Collections - GET - /api/collections/`collectionIdOrName`
-	- [ ] Create Collection - POST - /api/collections
-	- [ ] Update Collection - PATCH - /api/collections/`collectionIdOrName`
+	- [x] Scaffold Collections - GET - /api/collections/meta/scaffolds
+	- [x] List Collections - GET - /api/collections
+	- [x] View Collections - GET - /api/collections/`collectionIdOrName`
+	- [x] Create Collection - POST - /api/collections
+	- [x] Update Collection - PATCH - /api/collections/`collectionIdOrName`
 	- [ ] Delete Collection - DELETE - /api/collections/`collectionIdOrName`
 	- [ ] Import Collections - PUT - /api/collections/import
 - [ ] Settings - https://pocketbase.io/docs/api-settings/
@@ -57,5 +48,5 @@
 	- [ ] Delete Backup - DELETE - /api/backups/`key`
 	- [ ] Restore Backup - POST - /api/backups/`key`/restore
 	- [ ] Download Backup - GET - /api/backups/`key`
-- [x] Health - https://pocketbase.io/docs/api-health/
-	- [x] Health Check - GET - /api/health
+- [] Health - https://pocketbase.io/docs/api-health/
+	- [] Health Check - GET - /api/health
