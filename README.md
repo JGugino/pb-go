@@ -2,12 +2,11 @@
 ## ***This project is still under development and will have breaking changes, use at your own risk.***
 
 - [ ] Records - https://pocketbase.io/docs/api-records/
-	- CRUD Actions
-		- [x] List/Search - GET - /api/collections/`collectionIdOrName`/records
-		- [x] View - GET - /api/collections/`collectionIdOrName`/records/`recordId`
-		- [x] Create - POST - /api/collections/`collectionIdOrName`/records
-		- [x] Update - PATCH - /api/collections/`collectionIdOrName`/records/`recordId`
-		- [x] Delete - DELETE - /api/collections/`collectionIdOrName`/records/`recordId`
+	- [x] List/Search - GET - /api/collections/`collectionIdOrName`/records
+	- [x] View - GET - /api/collections/`collectionIdOrName`/records/`recordId`
+	- [x] Create - POST - /api/collections/`collectionIdOrName`/records
+	- [x] Update - PATCH - /api/collections/`collectionIdOrName`/records/`recordId`
+	- [x] Delete - DELETE - /api/collections/`collectionIdOrName`/records/`recordId`
 	- Auth Record Actions
 		- [x] List Auth Methods - GET - /api/collections/`collectionIdOrName`/auth-methods
 		- [x] Auth with Password - POST - /api/collections/`collectionIdOrName`/auth-with-password
@@ -31,7 +30,8 @@
 	- [x] View Collections - GET - /api/collections/`collectionIdOrName`
 	- [x] Create Collection - POST - /api/collections
 	- [x] Update Collection - PATCH - /api/collections/`collectionIdOrName`
-	- [ ] Delete Collection - DELETE - /api/collections/`collectionIdOrName`
+	- [x] Delete Collection - DELETE - /api/collections/`collectionIdOrName`
+	- [x] Truncate Collection - DELETE - /api/collections/`collectionIdOrName`/truncate
 	- [ ] Import Collections - PUT - /api/collections/import
 - [ ] Settings - https://pocketbase.io/docs/api-settings/
 	- [ ] List Settings - GET - /api/settings

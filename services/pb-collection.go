@@ -131,6 +131,29 @@ type PBCollection struct {
 	BaseURL string
 }
 
+func (collection *PBCollection) ImportCollections(token string, collections []map[string]any, deleteMissing bool) error {
+	apiUrl := fmt.Sprintf("%s/api/collections/import", collection.BaseURL)
+
+	data := map[string]any{
+		"collections":   collections,
+		"deleteMissing": deleteMissing,
+	}
+
+	res, err := SendAuthenticatedHTTPRequest("PUT", apiUrl, map[string]string{}, data, token)
+
+	if err != nil {
+		return err
+	}
+
+	status := res.StatusCode
+
+	if status != http.StatusOK {
+		return errors.New("failed-collection-import")
+	}
+
+	return nil
+}
+
 // ### CREATE COLLECTION ###
 func (collection *PBCollection) CreateNewCollection(token string, options CollectionOptions) (PocketBaseCollectionResponse, error) {
 	apiUrl := fmt.Sprintf("%s/api/collections", collection.BaseURL)
